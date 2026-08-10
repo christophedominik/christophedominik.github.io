@@ -35,7 +35,7 @@ sections:
 
         My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia).
 
-        Please reach out to collaborate 😃
+        Please reach out to collaborate!
     design:
       columns: '1'
 
@@ -87,3 +87,4 @@ sections:
           - project
     design:
       view: showcase
+---
