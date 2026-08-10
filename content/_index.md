@@ -60,23 +60,7 @@ sections:
     design:
       view: card
 
-  - block: collection
-    id: news
-    content:
-      title: Outreach
-      subtitle: 'Media interviews, press & blogs'
-      text: ''
-      filters:
-        folders:
-          - blog
-      count: 10
-      order: desc
-    design:
-      view: card
-      spacing:
-        padding: [0, 0, 0, 0]
-
-  - block: collection
+  - block: portfolio
     id: projects
     content:
       title: Projects
@@ -85,8 +69,17 @@ sections:
       filters:
         folders:
           - project
+      default_button_index: 0
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Current
+          tag: Current
+        - name: Past
+          tag: Past
     design:
       view: card
+      columns: 2
 
   - block: gallery
     id: gallery
