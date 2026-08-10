@@ -71,7 +71,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.1016/j.scitotenv.2024.172118
-   icon: academicons/open-access
+   icon: academicons/doi
 
  - name: PDF
    url: https://drive.google.com/file/d/1mN_B9elHPax6dTau0YhtItDCHl2bV8fu/view?usp=drive_link

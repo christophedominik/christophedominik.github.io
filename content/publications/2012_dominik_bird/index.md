@@ -35,7 +35,7 @@ featured: false
 links:
  - name: DOI
    url: https://doi.org/10.1080/00063657.2012.715279
-   icon: academicons/closed-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/open?id=0Bx3o7ymqHXGiLTBVWmFKOWJydm8

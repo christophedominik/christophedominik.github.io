@@ -32,7 +32,7 @@ featured: false
 links:
  - name: DOI
    url: http://dx.doi.org/10.25673/13861
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/open?id=1iE2B809_DU5TzJZtlYcCo-BaeH72PmTl

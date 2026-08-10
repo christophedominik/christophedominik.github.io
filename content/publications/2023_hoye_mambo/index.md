@@ -51,7 +51,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.3897/rio.9.e116951
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/file/d/17eTAG26fyCYI_7J33VukF0MEq_4vUjn6/view?usp=drive_link

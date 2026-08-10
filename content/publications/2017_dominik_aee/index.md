@@ -37,7 +37,7 @@ featured: false
 links:
  - name: DOI
    url: https://doi.org/10.1016/j.agee.2017.06.011
-   icon: academicons/closed-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/open?id=1ckP1dc6i4L4oVLPwCFnqWcT2nxP5Xput

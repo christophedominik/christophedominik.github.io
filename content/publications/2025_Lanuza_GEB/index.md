@@ -149,7 +149,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.1111/geb.70000
-   icon: academicons/open-access
+   icon: academicons/doi
 
  - name: PDF
    url: https://drive.google.com/file/d/1UV68E6i6u7vghdShRut99SnKGAjoOO1p/view?usp=drive_link

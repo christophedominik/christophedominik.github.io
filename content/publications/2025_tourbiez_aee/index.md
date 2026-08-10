@@ -63,7 +63,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.1016/j.agee.2025.109518
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/file/d/1xDDV2ChgPHHxk1-gVK-4E9GiJlMPOyO5/view?usp=drive_link

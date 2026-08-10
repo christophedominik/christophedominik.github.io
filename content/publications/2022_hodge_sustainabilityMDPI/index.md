@@ -78,7 +78,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.3390/su141710549
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/file/d/1D8pLXVtymatlmrQ2FWRpKRIhgtz0dUk2/view?usp=sharing

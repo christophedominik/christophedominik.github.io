@@ -36,7 +36,7 @@ featured: false
 links:
  - name: DOI
    url: https://doi.org/10.1111/1365-2664.13226
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/open?id=12IQrzhDpbmnT2aNFLtJc9yBn3avBCkJg

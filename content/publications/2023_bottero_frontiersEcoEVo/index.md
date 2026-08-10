@@ -70,7 +70,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.3389/fevo.2023.1128228
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/file/d/1175zBH_IFhJsvirIHo5kN9OMlegHoJnd/view?usp=share_link

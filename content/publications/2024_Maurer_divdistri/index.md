@@ -44,7 +44,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.1111/ddi.13853
-   icon: academicons/open-access
+   icon: academicons/doi
 
  - name: PDF
    url: https://drive.google.com/file/d/1pc-xBn5M7oJNdHdfPZhK5vVM1rGk5oj0/view?usp=drive_link

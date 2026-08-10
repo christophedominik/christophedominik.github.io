@@ -65,7 +65,7 @@ featured: no
 links:
  - name: DOI
    url: https://doi.org/10.1038/s41586-023-06773-3
-   icon: academicons/open-access
+   icon: academicons/doi
    
  - name: PDF
    url: https://drive.google.com/file/d/1fKFLBISdoTntWyCimTAqK0rwnI6nIRnJ/view?usp=sharing

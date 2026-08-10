@@ -36,7 +36,7 @@ featured: false
 links:
  - name: DOI
    url: http://dx.doi.org/10.1002/eap.2560
-   icon: academicons/open-access
+   icon: academicons/doi
 
  - name: PDF
    url: https://drive.google.com/file/d/1qNb0Lsep9lmi571PQZOMGBMw2fAkpWvQ/view?usp=sharing
