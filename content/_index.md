@@ -86,5 +86,51 @@ sections:
         folders:
           - project
     design:
-      view: showcase
+      view: card
+
+  - block: gallery
+    id: gallery
+    content:
+      title: Gallery
+      subtitle: 'Fieldwork & research'
+      items:
+        - image: media/gallery/LEGATO_01.png
+          caption: 'Rice terraces of Batad, Ifugao, Philippines (LEGATO 2012)'
+        - image: media/gallery/LEGATO_03.jpg
+          caption: 'A Banaue inhabitant, crew helpers and myself in Banaue, Ifugao, Philippines (LEGATO 2014)'
+        - image: media/gallery/LEGATO_04.jpg
+          caption: 'Blow-Vac sampling machine to collect rice-arthropods (LEGATO 2014)'
+        - image: media/gallery/PoshBee_01.jpeg
+          caption: 'Oilseed rape fields in Saxony-Anhalt, Germany (PoshBee 2019)'
+        - image: media/gallery/PoshBee_03.jpg
+          caption: 'Extraction of nectar from bumblebee individuals (PoshBee 2019)'
+        - image: media/gallery/PoshBee_02.jpeg
+          caption: 'Osmia bicornis saying hello! (PoshBee 2019)'
+        - image: media/gallery/PoshBee_05.jpg
+          caption: 'Bumblebee colony assessment (PoshBee 2019)'
+        - image: media/gallery/Safeguard_02.jpg
+          caption: 'Aporia crataegi (Safeguard 2022)'
+
+  - block: markdown
+    id: contact
+    content:
+      title: 'Contact'
+      subtitle: ''
+      text: |-
+        **Dr. Christophe Dominik**
+        Department of Community Ecology (BZF)
+        Helmholtz Centre for Environmental Research - UFZ
+        Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany
+
+        **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)
+        **Phone:** +49 341 6025 4318
+        **Office:** Room 3.23, Floor 3
+
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379"
+          style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;"
+          loading="lazy">
+        </iframe>
+    design:
+      columns: '1'
 ---
