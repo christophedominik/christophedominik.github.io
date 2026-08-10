@@ -15,7 +15,7 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
+- icon: brands/x
   name: Follow
   url: https://twitter.com/poshbee_eu
 url_code: ""

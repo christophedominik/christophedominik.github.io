@@ -15,7 +15,7 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
+- icon: brands/x
   name: Follow
   url: https://twitter.com/Safeguard2021
 url_code: ""

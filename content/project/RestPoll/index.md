@@ -15,7 +15,7 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
+- icon: brands/x
   name: Follow
   url: https://twitter.com/RestPoll
 url_code: ""

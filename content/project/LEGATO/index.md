@@ -14,7 +14,7 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
+- icon: brands/x
   name: Follow
   url: https://twitter.com/Legato_project
 url_code: ""
