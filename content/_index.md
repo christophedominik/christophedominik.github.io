@@ -93,7 +93,7 @@ sections:
     id: gallery
     content:
       title: Gallery
-      subtitle: 'Fieldwork & research'
+      subtitle: 'Fieldwork & stuff'
       items:
         - src: media/gallery/LEGATO_01.png
           caption: 'Rice terraces of Batad, Ifugao, Philippines (LEGATO 2012)'
