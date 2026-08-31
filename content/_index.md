@@ -46,7 +46,7 @@ sections:
     design:
       view: citation
 
-  - block: collection
+  - block: portfolio
     id: projects
     content:
       title: Projects
@@ -63,7 +63,7 @@ sections:
         - name: All
           tag: '*'
     design:
-      view: compact
+      columns: 3
 
   - block: collection
     id: talks
