@@ -15,7 +15,23 @@ sections:
       background:
         gradient_mesh:
           enable: true
-
+          
+  - block: gallery
+    content:
+      title: ''
+      items:
+        - src: media/gallery/LEGATO_01.png
+          caption: 'Rice terraces of Batad, Philippines'
+        - src: media/gallery/PoshBee_01.jpeg
+          caption: 'Oilseed rape fields, Saxony-Anhalt'
+        - src: media/gallery/Safeguard_02.jpg
+          caption: 'Aporia crataegi, Safeguard 2022'
+    design:
+      layout: slideshow
+      aspect_ratio: wide
+      lightbox: false
+      caption_position: overlay
+      
   - block: collection
     id: Publications
     content:
