@@ -15,19 +15,7 @@ sections:
       background:
         gradient_mesh:
           enable: true
-          
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publication
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 1
-      
+     
   - block: stats
     content:
       title: Research at a glance
@@ -46,13 +34,9 @@ sections:
     id: publications
     content:
       title: Recent Publications
-      text: ""
       filters:
         folders:
           - publications
-      count: 5
-      sort_by: Date
-      sort_ascending: false
     design:
       view: citation
 
