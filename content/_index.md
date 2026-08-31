@@ -5,7 +5,31 @@ date: 2022-10-24
 type: landing
 
 sections:
-
+  - block: resume-biography-3
+    content:
+      username: admin
+      button:
+        text: Download CV
+        url: uploads/cv.pdf
+    design:
+      background:
+        gradient_mesh:
+          enable: true
+     
+  - block: stats
+    content:
+      title: Research at a glance
+      items:
+        - statistic: "792"
+          description: Citations
+        - statistic: "24"
+          description: Publications
+        - statistic: "~14"
+          description: h-index
+    design:
+      layout: cards
+      numbers_gradient: true
+      
   - block: collection
     id: publications
     content:
@@ -16,38 +40,7 @@ sections:
     design: 
       view: citation
 
-  - block: portfolio
-    id: projects
-    content:
-      title: Projects
-      subtitle: 'Past & current'
-      filters:
-        folders:
-          - project
-      default\_button\_index: 1
-      buttons:
-        - name: Current
-          tag: Current
-        - name: Past
-          tag: Past
-        - name: All
-          tag: '*'
-    design:
-      view: compact
-
-  - block: collection
-    id: talks
-    content:
-      title: Presentations
-      subtitle: 'Selected Presentations'
-      filters:
-        folders:
-          - events
-      count: 3
-      sort_by: Date
-      sort_ascending: false
-    design:
-      view: date-title-summary
+ 
 
   - block: collection
     id: posts
