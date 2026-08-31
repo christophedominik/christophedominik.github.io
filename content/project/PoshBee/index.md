@@ -14,21 +14,9 @@ image:
   caption: 
   focal_point: Smart
 
-links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/poshbee_eu
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: https://poshbee.eu/
 ---
 
 # Description
@@ -44,6 +32,3 @@ June 2018 to May 2023.
 
 # Principal Investigators
 - [Mark Brown](https://pure.royalholloway.ac.uk/portal/en/persons/mark-j-f-brown(77a0e94b-96b7-4118-a740-163e7867e3b1).html)
-
-# Official website
-[https://poshbee.eu/](https://poshbee.eu/)

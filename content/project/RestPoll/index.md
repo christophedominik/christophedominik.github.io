@@ -14,21 +14,9 @@ image:
   caption: 
   focal_point: Smart
 
-links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/RestPoll
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: https://restpoll.eu/
 ---
 
 # Description
@@ -39,6 +27,3 @@ Horizon Europe
 
 # Principal Investigators
 - [Alexandra Klein](https://www.nature.uni-freiburg.de/team-en/klein.en)
-
-# Official website
-[https://restpoll.eu/](https://restpoll.eu/)

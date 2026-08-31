@@ -14,18 +14,9 @@ image:
   caption: 
   focal_point: Smart
 
-links: []
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: https://www.ufz.de/index.php?en=49370
 ---
 
 # Description
@@ -43,6 +34,3 @@ UFZ
 - [Anna Cord](https://tu-dresden.de/bu/umwelt/geo/geographie/landoeko/die-professur/beschaeftigte/prof-dr-anna-cord?set_language=en)
 - [Michael Beckmann](https://www.ufz.de/index.php?en=43858)
 - [Christophe Dominik](https://christophedominik.netlify.app/)
-
-# Official website
-[https://www.ufz.de/index.php?en=49370](https://www.ufz.de/index.php?en=49370)

@@ -14,13 +14,9 @@ image:
   caption: 
   focal_point: Smart
 
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: https://pollinators-antenna.eu/
 ---
 
 # Description
@@ -34,6 +30,3 @@ February 2024 to February 2027
 
 # Principal Investigators
 - [Oliver Schweiger](https://www.ufz.de/index.php?en=38591)
-
-# Official website
-[https://pollinators-antenna.eu/](https://pollinators-antenna.eu/)

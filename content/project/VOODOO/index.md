@@ -14,21 +14,9 @@ image:
   caption: 
   focal_point: Smart
 
-links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/VOODOO_EU
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: https://voodoo-project.eu/
 ---
 
 # Description
@@ -46,6 +34,3 @@ January 2020 to September 2023
 - [Matthias Albrecht](https://ira.agroscope.ch/de-CH/person/4999)
 - [Anna Gajda](https://gepris.dfg.de/gepris/person/428722194?context=person&task=showDetail&id=428722194&)
 - [Hajnalka Szentgyorgyi](http://www.ib.uj.edu.pl/hajnalka-szentgyorgyi-en)
-
-# Official website
-[https://voodoo-project.eu/](https://voodoo-project.eu/)

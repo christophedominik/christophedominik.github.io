@@ -13,21 +13,9 @@ image:
   caption: 
   focal_point: Smart
 
-links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/Legato_project
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: site
+    url: http://www.legato-project.net/
 ---
 
 # Description
@@ -39,8 +27,5 @@ March 2011 to February 2016.
 
 # Principal investigators
 - [Josef Settele](https://www.ufz.de/index.php?en=38572)
-
-# Official website
-[http://www.legato-project.net/](http://www.legato-project.net/)
 
 {{< figure src="/img/LEGATO_background.png" title="Rice terraces of Batad" >}}

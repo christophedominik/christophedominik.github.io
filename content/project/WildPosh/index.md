@@ -7,6 +7,13 @@ tags:
 - Current
 date: "2024-01-01T00:00:00"
 
+image:
+  caption: 
+  focal_point: Smart
+
+links: 
+  - type: site
+    url: https://wildposh.eu/
 
 ---
 
