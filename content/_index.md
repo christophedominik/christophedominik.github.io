@@ -117,5 +117,19 @@ sections:
       hover_zoom: true
       caption_position: hover
       
-  
+  - block: markdown
+    id: contact
+    content:
+      title: 'Contact'
+      text: |-
+        **Dr. Christophe Dominik**  
+        Department of Community Ecology (BZF)  
+        Helmholtz Centre for Environmental Research - UFZ  
+        Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany  
+
+        **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)  
+        **Phone:** +49 341 6025 4318  
+        **Office:** Room 3.23, Floor 3          
+    design:
+      columns: '1'
 ---
