@@ -24,7 +24,7 @@ sections:
     content:
       title: Research at a glance
       items:
-        - statistic: "792"
+        - statistic: "793"
           description: Citations
         - statistic: "24"
           description: Publications
