@@ -59,7 +59,7 @@ sections:
       numbers_gradient: true
       
   - block: collection
-    id: Publications
+    id: publications
     content:
       title: Recent Publications
       filters:
@@ -113,7 +113,12 @@ sections:
         folders:
           - blog
     design:
-       columns: 2
+      view: compact
+      columns: 2
+      fill_image: false
+      show_date: true
+      show_read_time: false
+      show_read_more: false
      
   - block: gallery
     id: gallery
