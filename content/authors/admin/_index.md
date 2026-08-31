@@ -8,7 +8,11 @@ role: Postdoctoral Researcher
 organizations:
   - name: Helmholtz Centre for Environmental Research - UFZ
     url: https://www.ufz.de/index.php?en=36737
-bio: My research interests include landscape ecology, pollination ecology, biological control, gut microbiome, and agroecology.
+bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity.
+
+My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia)."
+
+Download my [CV](uploads/cv.pdf).
 interests:
   - Landscape Ecology
   - Pollination Ecology
@@ -54,17 +58,25 @@ work:
 profiles:
   - icon: at-symbol
     url: 'mailto:christophe.dominik@ufz.de'
-    label: E-mail Me
+    label: Email
   - icon: brands/x
     url: https://twitter.com/HopperDominik
+    label: Twitter
   - icon: academicons/google-scholar
     url: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-4699-2781
+    label: Google Scholar
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Christophe_Dominik
+    label: ResearchGate
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-4699-2781
+    label: ORCID
   - icon: academicons/publons
     url: https://www.webofscience.com/wos/author/rid/P-2109-2019
+    label: Publons
+  - icon: academicons/cv
+    url: uploads/cv.pdf
+    label: CV
 ---
 
 I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity.

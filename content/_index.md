@@ -17,24 +17,10 @@ sections:
         gradient_mesh:
           enable: true
 
-  - block: markdown
-    content:
-      title: 'About my research'
-      subtitle: ''
-      text: |-
-        I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity.
-
-        My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia).
-
-        Please reach out to collaborate!
-    design:
-      columns: '1'
-
   - block: collection
     id: papers
     content:
       title: Recent Publications
-      text: Click here to see all [publications](./publications/).
       filters:
         folders:
           - publications
@@ -42,7 +28,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: citation
+      view: article-grid
 
   - block: portfolio
     id: projects
@@ -54,12 +40,12 @@ sections:
           - project
       default\_button\_index: 1
       buttons:
-        - name: All
-          tag: '*'
         - name: Current
           tag: Current
         - name: Past
           tag: Past
+        - name: All
+          tag: '*'
     design:
       view: compact
 
