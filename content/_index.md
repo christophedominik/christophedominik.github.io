@@ -27,9 +27,9 @@ sections:
         - src: media/gallery/Safeguard_02.jpg
           caption: 'Aporia crataegi, Safeguard 2022'
     design:
-      layout: slideshow
-      aspect_ratio: wide
-      lightbox: false
+      layout: carousel
+      aspect_ratio: landscape
+      lightbox: true
       caption_position: overlay
 
   - block: collection
