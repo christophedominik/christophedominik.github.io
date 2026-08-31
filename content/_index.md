@@ -27,7 +27,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: article-grid
+      view: citation
 
   - block: portfolio
     id: projects
