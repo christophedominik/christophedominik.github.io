@@ -90,7 +90,7 @@ sections:
     design:
       view: date-title-summary
 
-  - block: portfolio
+  - block: collection
     id: posts
     content:
       title: Outreach
@@ -99,7 +99,8 @@ sections:
         folders:
           - blog
     design:
-      view: compact
+      view: card
+      columns: 2
 
   - block: gallery
     id: gallery
