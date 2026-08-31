@@ -110,7 +110,7 @@ sections:
     design:
       view: date-title-summary
 
-  - block: collection
+  - block: portfolio
     id: posts
     content:
       title: Outreach
@@ -118,9 +118,6 @@ sections:
       filters:
         folders:
           - blog
-    design:
-      view: card
-      columns: 2
 
   - block: gallery
     id: gallery
@@ -132,8 +129,6 @@ sections:
           caption: 'Rice terraces of Batad, Ifugao, Philippines (LEGATO 2012)'
         - src: media/gallery/LEGATO_03.jpg
           caption: 'A Banaue inhabitant, crew helpers and myself (LEGATO 2014)'
-        - src: media/gallery/LEGATO_04.jpg
-          caption: 'Blow-Vac sampling machine to collect rice-arthropods (LEGATO 2014)'
         - src: media/gallery/PoshBee_01.jpeg
           caption: 'Oilseed rape fields in Saxony-Anhalt, Germany (PoshBee 2019)'
         - src: media/gallery/PoshBee_03.jpg
