@@ -44,6 +44,26 @@ sections:
       view: article-grid
       columns: 1
       
+  - block: stats
+    content:
+      title: Research at a glance
+      items:
+        - statistic: "24"
+          description: Publications
+          icon: hero/document-text
+        - statistic: "~15"
+          description: h-index
+          icon: hero/chart-bar
+        - statistic: "8"
+          description: Funded projects
+          icon: hero/beaker
+        - statistic: "10+"
+          description: Years of research
+          icon: hero/academic-cap
+    design:
+      layout: cards
+      numbers_gradient: true
+      
   - block: collection
     id: Publications
     content:
