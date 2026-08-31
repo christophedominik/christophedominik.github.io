@@ -18,5 +18,7 @@ publishDate: '2026-08-31T14:51:29.980883Z'
 publication_types:
 - article-journal
 publication: '*Science of the Total Environment*'
-doi: 10.1016/j.scitotenv.2024.172239
+links: 
+  - type: doi
+    url: 10.1016/j.scitotenv.2024.172239
 ---
