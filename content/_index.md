@@ -70,12 +70,8 @@ sections:
       filters:
         folders:
           - blog
-      count: 10
-      sort_by: Date
-      sort_ascending: false
     design:
       view: compact
-
 
   - block: gallery
     id: gallery
