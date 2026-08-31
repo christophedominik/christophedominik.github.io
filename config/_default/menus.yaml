@@ -9,13 +9,13 @@ main:
     weight: 10
   - name: Publications
     url: /#publications
-    weight: 11
-  - name: Presentations
-    url: /#talks
-    weight: 12
-  - name: Outreach
-    url: /#posts
-    weight: 13
+    weight: 20
   - name: Projects
     url: /#Projects
-    weight: 14
+    weight: 30
+  - name: Presentations
+    url: /#talks
+    weight: 40
+  - name: Outreach
+    url: /#posts
+    weight: 50
