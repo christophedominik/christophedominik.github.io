@@ -7,28 +7,13 @@ tags:
 - Current
 date: "2024-01-01T00:00:00"
 
-# Optional external URL for project (replaces project detail page).
-external_link: ""
-
-image:
-  caption: 
-  focal_point: Smart
-
 links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/WildPoshProject
+ - type: site
+   url: http://wildposh.eu/
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
 ---
 
 # Description
@@ -39,6 +24,3 @@ Horizon Europe
 
 # Principal Investigators
 - [Denis Michez](https://staff.umons.ac.be/denis.michez/indexEn.html)
-
-# Official website
-[http://wildposh.eu/](http://wildposh.eu/)
