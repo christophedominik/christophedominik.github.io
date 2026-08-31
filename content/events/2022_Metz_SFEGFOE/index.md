@@ -29,18 +29,10 @@ image:
   caption: ''
   focal_point: Right
 
-links: []
-url_code: ""
-url_pdf: ""
-links: "https://docs.google.com/presentation/d/1JScs_3n4U5fsm2rtJNdA9KwB1B4nBGhl/edit?usp=share_link&ouid=105947976462368034257&rtpof=true&sd=true"
-url_video: ""
+links: 
+  - type: slides
+    url: https://docs.google.com/presentation/d/1JScs_3n4U5fsm2rtJNdA9KwB1B4nBGhl/edit?usp=share_link&ouid=105947976462368034257&rtpof=true&sd=true
 
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.

@@ -42,18 +42,9 @@ image:
   caption: ''
   focal_point: Right
 
-links: []
-url_code: ""
-url_pdf: ""
-links: "https://drive.google.com/open?id=1CMfcIZXhXyGtcecEe6iXdHLm2FKbfiHi"
-url_video: ""
-
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+links: 
+  - type: slides
+    url: https://drive.google.com/open?id=1CMfcIZXhXyGtcecEe6iXdHLm2FKbfiHi
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
