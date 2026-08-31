@@ -10,10 +10,6 @@ date: "2024-01-01T00:00:00"
 links:
  - type: site
    url: http://wildposh.eu/
-url_code: ""
-url_pdf: ""
-links: ""
-url_video: ""
 ---
 
 # Description
