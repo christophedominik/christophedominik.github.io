@@ -1,13 +1,35 @@
-title: Christophe Dominik
-first_name: Christophe
-last_name: Dominik
-superuser: true
-highlight_name: true
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Dr. Alex Johnson
+  given: Christophe
+  family: Dominik
+postnominals:
+  - PhD
+status:
+  icon: "☕️"
 role: Postdoctoral Researcher
+
+bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the Helmholtz Centre for Environmental Research (UFZ), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control."
+
 affiliations:
   - name: Helmholtz Centre for Environmental Research - UFZ
     url: https://www.ufz.de/index.php?en=36737
-bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the Helmholtz Centre for Environmental Research (UFZ), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control."
+
+links:
+  - icon: at-symbol
+    url: 'mailto:christophe.dominik@ufz.de'
+    label: Email
+  - icon: academicons/google-scholar
+    url: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Christophe_Dominik
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-4699-2781
+  - icon: academicons/cv
+    url: uploads/cv.pdf
+
 interests:
   - Landscape Ecology
   - Macroecology
@@ -15,69 +37,23 @@ interests:
   - Pollinator Health
   - Biological Control
   - R and data visualization
+
 education:
-  - area: PhD in Natural Sciences
+  - degree: PhD in Natural Sciences
     institution: Martin Luther University Halle-Wittenberg
-    date_start: '2012-01-01'
-    date_end: '2019-01-31'
-  - area: MSc in Biodiversity and Tropical Ecosystems
+    start: 2012-01-01
+    end: 2019-01-31
+    summary: |
+      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+    button:
+      text: Download dissertation
+      url: /resume.pdf
+      icon: hero/arrow-down-tray
+  - degree: MSc in Biodiversity and Tropical Ecosystems
     institution: Universite de La Reunion
-    date_start: '2009-09-01'
-    date_end: '2011-06-30'
-  - area: BSc in Biology of Organisms and Populations
+    start: 2009-09-01
+    end: 2011-06-30
+  - degree: BSc in Biology of Organisms and Populations
     institution: Universite Henri-Poincare (UHP Nancy-1)
-    date_start: '2006-09-01'
-    date_end: '2009-06-30'
-work:
-  - position: Postdoctoral Researcher
-    company_name: Helmholtz Centre for Environmental Research - UFZ
-    company_url: https://www.ufz.de
-    company_logo: ''
-    date_start: '2019-01-01'
-    date_end: ''
-    summary: Department of Community Ecology (BZF). Investigating pollinator responses to landscape and land-use intensity.
-  - position: PhD Student / Guest Scientist
-    company_name: UFZ - Department of Computational Landscape Ecology
-    company_url: https://www.ufz.de
-    company_logo: ''
-    date_start: '2012-01-01'
-    date_end: '2019-01-01'
-    summary: ''
-  - position: Guest Scientist
-    company_name: International Rice Research Institute (IRRI)
-    company_url: https://www.irri.org
-    company_logo: ''
-    date_start: '2013-09-01'
-    date_end: '2014-09-01'
-    summary: ''
-social:
-  - icon: envelope
-    link: 'mailto:christophe.dominik@ufz.de'
-  - icon: brands/x
-    link: https://twitter.com/HopperDominik
-  - icon: academicons/google-scholar
-    link: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
-  - icon: academicons/researchgate
-    link: https://www.researchgate.net/profile/Christophe_Dominik
-  - icon: academicons/orcid
-    link: https://orcid.org/0000-0002-4699-2781
-  - icon: academicons/publons
-    link: https://www.webofscience.com/wos/author/rid/P-2109-2019
-  - icon: academicons/cv
-    link: uploads/cv.pdf
-profiles:
-  - icon: at-symbol
-    url: 'mailto:christophe.dominik@ufz.de'
-    label: Email
-  - icon: brands/x
-    url: https://twitter.com/HopperDominik
-  - icon: academicons/google-scholar
-    url: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
-  - icon: academicons/researchgate
-    url: https://www.researchgate.net/profile/Christophe_Dominik
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-4699-2781
-  - icon: academicons/publons
-    url: https://www.webofscience.com/wos/author/rid/P-2109-2019
-  - icon: academicons/cv
-    url: uploads/cv.pdf
+    start: 2006-09-01
+    end: 2009-06-30
