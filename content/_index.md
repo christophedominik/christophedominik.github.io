@@ -46,6 +46,7 @@ sections:
     id: publications
     content:
       title: Recent Publications
+      text: ""
       filters:
         folders:
           - publications
