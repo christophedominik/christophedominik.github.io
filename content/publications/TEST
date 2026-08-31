@@ -1,25 +1,27 @@
 ---
-title: Direct and indirect effects of local habitat quality, landscape use intensity
-  and honeybees on plant-pollinator network functioning and robustness across Europe
+title: "An example journal article"
 authors:
-- Corina Maurer
-- Anina Knauer
-- Isabelle Badenhausser
-- Carolin Biegerl
-- Riccardo Bommarco
-- Mark Brown
-- Domingo Cano Sáez
-- Yann Clough
-- Christophe Dominik
-- Yoko L Dupont
-- ' others'
-date: '2026-01-01'
-publishDate: '2026-08-31T11:42:05.506556Z'
-publication_types:
-- article-journal
-publication: '*Direct and indirect effects of local habitat quality, landscape use
-  intensity and honeybees on plant-pollinator network functioning and robustness across
-  Europe*'
+- me
+- Robert Ford
+author_notes:
+- "Equal contribution"
+- "Equal contribution"
+date: "2015-09-01T00:00:00Z"
+
+# Schedule page publish date (NOT publication's date).
+publishDate: "2017-01-01T00:00:00Z"
+
+# Publication type.
+# Accepts a single type but formatted as a YAML list (for Hugo requirements).
+# Enter a publication type from the CSL standard.
+publication_types: ["article-journal"]
+
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "Journal of Source Themes"
+  volume: 1
+  issue: 1
+
 peer_reviewed: true
 open_access: true
 license: CC-BY-4.0
@@ -97,5 +99,4 @@ slides: ""
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).  
----
+Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
