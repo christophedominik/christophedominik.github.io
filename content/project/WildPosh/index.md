@@ -12,7 +12,7 @@ links:
    url: http://wildposh.eu/
 url_code: ""
 url_pdf: ""
-url_slides: ""
+links: ""
 url_video: ""
 ---
 

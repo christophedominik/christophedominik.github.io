@@ -32,7 +32,7 @@ image:
 links: []
 url_code: ""
 url_pdf: ""
-url_slides: "https://docs.google.com/presentation/d/1JScs_3n4U5fsm2rtJNdA9KwB1B4nBGhl/edit?usp=share_link&ouid=105947976462368034257&rtpof=true&sd=true"
+links: "https://docs.google.com/presentation/d/1JScs_3n4U5fsm2rtJNdA9KwB1B4nBGhl/edit?usp=share_link&ouid=105947976462368034257&rtpof=true&sd=true"
 url_video: ""
 
 # Markdown Slides (optional).

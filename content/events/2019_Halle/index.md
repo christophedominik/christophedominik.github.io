@@ -45,7 +45,7 @@ image:
 links: []
 url_code: ""
 url_pdf: ""
-url_slides: "https://drive.google.com/open?id=1CMfcIZXhXyGtcecEe6iXdHLm2FKbfiHi"
+links: "https://drive.google.com/open?id=1CMfcIZXhXyGtcecEe6iXdHLm2FKbfiHi"
 url_video: ""
 
 # Markdown Slides (optional).
