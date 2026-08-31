@@ -27,7 +27,7 @@ sections:
         - src: media/gallery/Safeguard_02.jpg
           caption: 'Aporia crataegi, Safeguard 2022'
     design:
-      layout: carousel
+      layout: slideshow
       aspect_ratio: landscape
       lightbox: true
       caption_position: overlay
@@ -48,18 +48,12 @@ sections:
     content:
       title: Research at a glance
       items:
+        - statistic: "792"
+          description: Citations
         - statistic: "24"
           description: Publications
-          icon: hero/document-text
-        - statistic: "~15"
+        - statistic: "~14"
           description: h-index
-          icon: hero/chart-bar
-        - statistic: "8"
-          description: Funded projects
-          icon: hero/beaker
-        - statistic: "10+"
-          description: Years of research
-          icon: hero/academic-cap
     design:
       layout: cards
       numbers_gradient: true
@@ -110,7 +104,7 @@ sections:
     design:
       view: date-title-summary
 
-  - block: portfolio
+  - block: collection
     id: posts
     content:
       title: Outreach
