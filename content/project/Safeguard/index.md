@@ -4,7 +4,7 @@ summary: "Safeguarding European wild pollinators"
 
 tags:
 - Safeguard
-- Current
+- Past
 date: "2021-09-01T00:00:00"
 
 # Optional external URL for project (replaces project detail page).

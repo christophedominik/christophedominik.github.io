@@ -4,7 +4,7 @@ summary: "Modern approaches to the monitoring of biodiversity"
 
 tags:
 - MAMBO
-- Current
+- Past
 date: "2022-09-14T00:00:00"
 
 # Optional external URL for project (replaces project detail page).
