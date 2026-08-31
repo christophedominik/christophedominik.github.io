@@ -60,7 +60,7 @@ sections:
         - name: Past
           tag: Past
     design:
-      view: compact
+      view: masonry
 
   - block: collection
     id: talks
@@ -74,7 +74,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: compact
+      view: article-grid
 
   - block: collection
     id: posts
@@ -88,7 +88,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: compact
+      view: list
 
   - block: gallery
     id: gallery
