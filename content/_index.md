@@ -38,7 +38,7 @@ sections:
         folders:
           - publications
     design: 
-      view: citation
+      view: article-grid
 
   - block: portfolio
     id: projects
