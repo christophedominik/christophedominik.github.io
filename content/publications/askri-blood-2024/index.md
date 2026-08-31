@@ -8,7 +8,7 @@ authors:
 - Sébastien N Voisin
 - Simon Hodge
 - Jane C Stout
-- Christophe Dominik
+- admin
 - Oliver Schweiger
 - Giovanni Tamburini
 - Maria Helena Pereira-Peixoto
