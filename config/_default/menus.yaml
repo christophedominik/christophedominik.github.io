@@ -14,8 +14,8 @@ main:
     url: /#talks
     weight: 12
   - name: Outreach
-    url: /#news
+    url: /#Blog
     weight: 13
   - name: Projects
-    url: projects/
+    url: /#Projects
     weight: 14

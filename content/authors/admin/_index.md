@@ -8,9 +8,7 @@ role: Postdoctoral Researcher
 organizations:
   - name: Helmholtz Centre for Environmental Research - UFZ
     url: https://www.ufz.de/index.php?en=36737
-bio:>-
-I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia).
-
+bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the Helmholtz Centre for Environmental Research (UFZ), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control."
 interests:
   - Landscape Ecology
   - Macroecology
@@ -24,11 +22,11 @@ education:
     date_start: 2012-01-01
     date_end: 2019-01-31
   - area: MSc in Biodiversity and Tropical Ecosystems
-    institution: Université de La Réunion
+    institution: Universite de La Reunion
     date_start: 2009-09-01
     date_end: 2011-06-30
   - area: BSc in Biology of Organisms and Populations
-    institution: Université Henri-Poincaré (UHP Nancy-1)
+    institution: Universite Henri-Poincare (UHP Nancy-1)
     date_start: 2006-09-01
     date_end: 2009-06-30
 work:
