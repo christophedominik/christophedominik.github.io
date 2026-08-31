@@ -41,6 +41,7 @@ sections:
     design:
       layout: cards
       numbers_gradient: true
+      spacing: padding: ['0', '0', '0', '0']
       
   - block: collection
     id: publications
