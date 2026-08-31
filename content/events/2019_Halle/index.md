@@ -42,10 +42,6 @@ image:
   caption: ''
   focal_point: Right
 
-links: 
-  - type: slides
-    url: https://drive.google.com/open?id=1CMfcIZXhXyGtcecEe6iXdHLm2FKbfiHi
-
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
