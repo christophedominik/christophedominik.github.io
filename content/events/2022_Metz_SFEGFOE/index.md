@@ -29,11 +29,6 @@ image:
   caption: ''
   focal_point: Right
 
-links: 
-  - type: slides
-    url: https://docs.google.com/presentation/d/1JScs_3n4U5fsm2rtJNdA9KwB1B4nBGhl/edit?usp=share_link&ouid=105947976462368034257&rtpof=true&sd=true
-
-
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
