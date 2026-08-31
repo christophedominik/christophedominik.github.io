@@ -74,7 +74,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: list
+      view: date-title-summary
 
   - block: portfolio
     id: posts
@@ -88,7 +88,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: citation
+      view: compact
 
 
   - block: gallery
