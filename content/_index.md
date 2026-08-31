@@ -52,6 +52,7 @@ sections:
       filters:
         folders:
           - project
+      default\_button\_index: 1
       buttons:
         - name: All
           tag: '*'
