@@ -118,7 +118,9 @@ sections:
       filters:
         folders:
           - blog
-
+    design:
+       columns: 2
+     
   - block: gallery
     id: gallery
     content:
