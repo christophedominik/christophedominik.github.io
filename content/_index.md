@@ -30,7 +30,15 @@ sections:
       layout: cards
       numbers_gradient: true
       
-
+  - block: collection
+    id: publications
+    content:
+      title: Recent Publications
+      filters:
+        folders:
+          - publications
+    design: 
+      view: citation
 
   - block: portfolio
     id: projects
@@ -108,16 +116,6 @@ sections:
       lightbox: true
       hover_zoom: true
       caption_position: hover
-
-    - block: collection
-    id: publications
-    content:
-      title: Recent Publications
-      filters:
-        folders:
-          - publications
-    design: 
-      view: citation
       
   - block: markdown
     id: contact
