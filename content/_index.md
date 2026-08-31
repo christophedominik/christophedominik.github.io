@@ -54,7 +54,7 @@ sections:
       filters:
         folders:
           - project
-      default_button_index: 1
+      default_button_index: 0
       buttons:
         - name: Current
           tag: Current
