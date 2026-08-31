@@ -56,7 +56,7 @@ work:
     date_end: '2014-09-01'
     summary: ''
 
-profiles:
+social:
   - icon: at-symbol
     url: 'mailto:christophe.dominik@ufz.de'
     label: Email
