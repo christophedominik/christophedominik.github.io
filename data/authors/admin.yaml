@@ -56,25 +56,18 @@ work:
     date_end: '2014-09-01'
     summary: ''
 
-socials:
-  - icon: at-symbol
-    url: 'mailto:christophe.dominik@ufz.de'
-    label: Email
+social:
+  - icon: envelope
+    link: 'mailto:christophe.dominik@ufz.de'
   - icon: brands/x
-    url: https://twitter.com/HopperDominik
-    label: Twitter
+    link: https://twitter.com/HopperDominik
   - icon: academicons/google-scholar
-    url: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
-    label: Google Scholar
+    link: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
   - icon: academicons/researchgate
-    url: https://www.researchgate.net/profile/Christophe_Dominik
-    label: ResearchGate
+    link: https://www.researchgate.net/profile/Christophe_Dominik
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-4699-2781
-    label: ORCID
+    link: https://orcid.org/0000-0002-4699-2781
   - icon: academicons/publons
-    url: https://www.webofscience.com/wos/author/rid/P-2109-2019
-    label: Publons
+    link: https://www.webofscience.com/wos/author/rid/P-2109-2019
   - icon: academicons/cv
-    url: uploads/cv.pdf
-    label: CV
+    link: uploads/cv.pdf
