@@ -18,7 +18,23 @@ publishDate: '2026-08-31T14:51:29.980883Z'
 publication_types:
 - article-journal
 publication: '*Science of the Total Environment*'
-links: 
-  - type: doi
-    url: 10.1016/j.scitotenv.2024.172239
+doi: 10.1016/j.scitotenv.2024.172239
+links:
+  - type: pdf
+    url: http://arxiv.org/pdf/1512.04133v1
+  - type: code
+    url: https://github.com/HugoBlox/kit
+  - type: dataset
+    url: ""
+  - type: poster
+    url: ""
+  - type: project
+    url: ""
+  - type: slides
+    url: https://www.slideshare.net/
+  - type: source
+    url: ""
+  - type: video
+    url: ""
+    
 ---
