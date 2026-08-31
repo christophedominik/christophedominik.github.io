@@ -17,7 +17,7 @@ sections:
           enable: true
 
   - block: collection
-    id: papers
+    id: Publications
     content:
       title: Recent Publications
       filters:
