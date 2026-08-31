@@ -62,7 +62,7 @@ sections:
     design:
       view: compact
 
-  - block: portfolio
+  - block: collection
     id: talks
     content:
       title: Presentations
@@ -74,7 +74,7 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: compact
+      view: list
 
   - block: portfolio
     id: posts
