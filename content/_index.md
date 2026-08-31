@@ -3,6 +3,8 @@ title: ''
 summary: ''
 date: 2022-10-24
 type: landing
+design: 
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
