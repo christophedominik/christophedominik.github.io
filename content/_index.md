@@ -30,6 +30,8 @@ sections:
       layout: slideshow
       aspect_ratio: landscape
       lightbox: true
+      autoplay: true 
+      autoplay\_interval: 1500
       caption_position: overlay
 
   - block: collection
