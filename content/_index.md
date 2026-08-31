@@ -40,24 +40,40 @@ sections:
     design: 
       view: citation
 
- 
-
-  - block: collection
-    id: posts
+  - block: portfolio
+    id: projects
     content:
-      title: Outreach
-      subtitle: 'Media interviews, press & blogs'
+      title: Projects
+      subtitle: 'Past & current'
       filters:
         folders:
-          - blog
+          - project
+      default\_button\_index: 1
+      buttons:
+        - name: Current
+          tag: Current
+        - name: Past
+          tag: Past
+        - name: All
+          tag: '*'
     design:
-      view: article-grid
-      columns: 2
-      fill_image: false
-      show_date: true
-      show_read_time: false
-      show_read_more: false
-      
+      view: compact
+
+  - block: collection
+    id: talks
+    content:
+      title: Presentations
+      subtitle: 'Selected Presentations'
+      filters:
+        folders:
+          - events
+      count: 3
+      sort_by: Date
+      sort_ascending: false
+    design:
+      view: date-title-summary
+
+  
   - block: gallery
     id: gallery
     content:
