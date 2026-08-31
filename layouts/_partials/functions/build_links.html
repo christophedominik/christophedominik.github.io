@@ -1,6 +1,21 @@
 {{- $page := .page -}}
 {{- $links := slice -}}
 {{- $seen := dict -}}
+
+{{/* Cite button from cite.bib */}}
+{{- $cite := $page.Resources.GetMatch "cite.bib" -}}
+{{- if $cite -}}
+  {{- $links = $links | append (dict "type" "cite" "url" $cite.RelPermalink) -}}
+  {{- $seen = merge $seen (dict "cite" true) -}}
+{{- end -}}
+
+{{/* DOI from doi: field */}}
+{{- with $page.Params.doi -}}
+  {{- $links = $links | append (dict "type" "doi" "url" (printf "https://doi.org/%s" .)) -}}
+  {{- $seen = merge $seen (dict "doi" true) -}}
+{{- end -}}
+
+{{/* Links from links: list */}}
 {{- range ($page.Params.links | default slice) -}}
   {{- if .url -}}
     {{- $key := .type | default .name | default .url -}}
@@ -10,13 +25,10 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- with $page.Params.doi -}}
-  {{- if not (index $seen "doi") -}}
-    {{- $links = $links | append (dict "type" "doi" "url" (printf "https://doi.org/%s" .)) -}}
-    {{- $seen = merge $seen (dict "doi" true) -}}
-  {{- end -}}
-{{- end -}}
+
+{{/* Shorthand url_ fields */}}
 {{- with $page.Params.url_pdf -}}
   {{- $links = $links | append (dict "type" "pdf" "url" .) -}}
 {{- end -}}
+
 {{- return $links -}}
