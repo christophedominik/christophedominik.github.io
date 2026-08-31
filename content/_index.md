@@ -11,11 +11,15 @@ sections:
       button:
         text: Download CV
         url: uploads/cv.pdf
+      headings:
+        about: ''
+        education: ''
+        interests: ''
     design:
       background:
         gradient_mesh:
           enable: true
-     
+
   - block: stats
     content:
       title: Research at a glance
@@ -29,7 +33,7 @@ sections:
     design:
       layout: cards
       numbers_gradient: true
-      
+
   - block: collection
     id: publications
     content:
@@ -37,7 +41,7 @@ sections:
       filters:
         folders:
           - publications
-    design: 
+    design:
       view: citation
 
   - block: portfolio
@@ -48,7 +52,7 @@ sections:
       filters:
         folders:
           - project
-      default\_button\_index: 1
+      default_button_index: 1
       buttons:
         - name: Current
           tag: Current
@@ -57,7 +61,7 @@ sections:
         - name: All
           tag: '*'
     design:
-      view: compact
+      view: card
 
   - block: collection
     id: talks
@@ -84,11 +88,7 @@ sections:
     design:
       view: article-grid
       columns: 2
-      fill_image: false
-      show_date: true
-      show_read_time: false
-      show_read_more: false
-      
+
   - block: gallery
     id: gallery
     content:
@@ -98,11 +98,13 @@ sections:
         - src: media/gallery/LEGATO_01.png
           caption: 'Rice terraces of Batad, Ifugao, Philippines (LEGATO 2012)'
         - src: media/gallery/LEGATO_03.jpg
-          caption: 'A Banaue inhabitant, crew helpers and myself (LEGATO 2014)'
+          caption: 'Field crew in Banaue, Ifugao, Philippines (LEGATO 2014)'
+        - src: media/gallery/LEGATO_04.jpg
+          caption: 'Blow-Vac sampling for rice arthropods (LEGATO 2014)'
         - src: media/gallery/PoshBee_01.jpeg
           caption: 'Oilseed rape fields in Saxony-Anhalt, Germany (PoshBee 2019)'
         - src: media/gallery/PoshBee_03.jpg
-          caption: 'Extraction of nectar from bumblebee individuals (PoshBee 2019)'
+          caption: 'Nectar extraction from bumblebees (PoshBee 2019)'
         - src: media/gallery/PoshBee_02.jpeg
           caption: 'Osmia bicornis saying hello! (PoshBee 2019)'
         - src: media/gallery/PoshBee_05.jpg
@@ -116,19 +118,19 @@ sections:
       lightbox: true
       hover_zoom: true
       caption_position: hover
-      
+
   - block: markdown
     id: contact
     content:
       title: 'Contact'
       text: |-
-        **Dr. Christophe Dominik**  
-        Department of Community Ecology (BZF)  
-        Helmholtz Centre for Environmental Research - UFZ  
-        Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany  
+        **Dr. Christophe Dominik**
+        Department of Community Ecology (BZF)
+        Helmholtz Centre for Environmental Research - UFZ
+        Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany
 
-        **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)  
-        **Office:** Room 3.23, Floor 3  
+        **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)
+        **Office:** Room 3.23, Floor 3
 
         <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379" style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;" loading="lazy"></iframe>
     design:

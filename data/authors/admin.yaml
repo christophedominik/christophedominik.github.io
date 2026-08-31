@@ -1,17 +1,18 @@
 schema: hugoblox/author/v1
-slug: me
+slug: admin
 is_owner: true
 name:
-  display: Dr. Christophe Dominik
+  display: Christophe Dominik
   given: Christophe
   family: Dominik
 postnominals:
   - PhD
 status:
-  icon: "☕️"
+  icon: "🐝"
 role: Postdoctoral Researcher
 
-bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the Helmholtz Centre for Environmental Research (UFZ), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control."
+bio: |
+  I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the Helmholtz Centre for Environmental Research (UFZ), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity. My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control.
 
 affiliations:
   - name: Helmholtz Centre for Environmental Research - UFZ
@@ -19,14 +20,18 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: 'mailto:christophe.dominik@ufz.de'
-    label: Email
+    url: mailto:christophe.dominik@ufz.de
+    label: E-mail Me
+  - icon: brands/x
+    url: https://twitter.com/HopperDominik
   - icon: academicons/google-scholar
     url: https://scholar.google.co.uk/citations?user=GII0MqEAAAAJ
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Christophe_Dominik
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-4699-2781
+  - icon: academicons/publons
+    url: https://www.webofscience.com/wos/author/rid/P-2109-2019
   - icon: academicons/cv
     url: uploads/cv.pdf
 
@@ -44,10 +49,10 @@ education:
     start: 2012-01-01
     end: 2019-01-31
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+      Thesis on the effects of landscape heterogeneity on arthropod communities in rice agro-ecosystems.
     button:
       text: Download dissertation
-      url: /resume.pdf
+      url: uploads/cv.pdf
       icon: hero/arrow-down-tray
   - degree: MSc in Biodiversity and Tropical Ecosystems
     institution: Universite de La Reunion
@@ -57,3 +62,20 @@ education:
     institution: Universite Henri-Poincare (UHP Nancy-1)
     start: 2006-09-01
     end: 2009-06-30
+
+experience:
+  - role: Postdoctoral Researcher
+    org: Helmholtz Centre for Environmental Research - UFZ
+    start: 2019-01-01
+    summary: |
+      Department of Community Ecology (BZF). Investigating pollinator responses to landscape and land-use intensity across European agroecosystems.
+  - role: PhD Student / Guest Scientist
+    org: UFZ - Department of Computational Landscape Ecology
+    start: 2012-01-01
+    end: 2019-01-01
+  - role: Guest Scientist
+    org: International Rice Research Institute (IRRI)
+    start: 2013-09-01
+    end: 2014-09-01
+    summary: |
+      Crop and Environmental Sciences Division (CESD), Philippines.
