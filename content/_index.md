@@ -5,31 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: resume-biography-3
-    content:
-      username: admin
-      button:
-        text: Download CV
-        url: uploads/cv.pdf
-    design:
-      background:
-        gradient_mesh:
-          enable: true
-     
-  - block: stats
-    content:
-      title: Research at a glance
-      items:
-        - statistic: "792"
-          description: Citations
-        - statistic: "24"
-          description: Publications
-        - statistic: "~14"
-          description: h-index
-    design:
-      layout: cards
-      numbers_gradient: true
-      
+
   - block: collection
     id: publications
     content:
@@ -129,7 +105,9 @@ sections:
 
         **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)  
         **Phone:** +49 341 6025 4318  
-        **Office:** Room 3.23, Floor 3          
+        **Office:** Room 3.23, Floor 3  
+
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379" style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;" loading="lazy"></iframe>
     design:
       columns: '1'
 ---
