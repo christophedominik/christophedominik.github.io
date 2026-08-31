@@ -14,14 +14,6 @@ image:
   caption: 
   focal_point: Smart
 
-links:
-- icon: brands/x
-  name: Follow
-  url: https://twitter.com/ANTENNA_project
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
