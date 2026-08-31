@@ -31,6 +31,18 @@ sections:
       aspect_ratio: wide
       lightbox: false
       caption_position: overlay
+
+  - block: collection
+    id: featured
+    content:
+      title: Featured Publication
+      filters:
+        folders:
+          - publications
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 1
       
   - block: collection
     id: Publications
