@@ -20,10 +20,10 @@ publication_types:
 publication: '*Science of the Total Environment*'
 doi: 10.1016/j.scitotenv.2024.172239
 links:
-  - name: pdf
-    url: http://arxiv.org/pdf/1512.04133v1
-  - name: code
-    url: https://github.com/HugoBlox/kit
+  - type: pdf
+    url: https://arxiv.org/pdf/1512.04133v1
+  - type: doi
+    url: 10.1016/j.scitotenv.2024.172239
   - type: dataset
     url: ""
   - type: poster

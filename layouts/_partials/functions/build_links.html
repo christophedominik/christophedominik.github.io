@@ -3,20 +3,20 @@
 {{- $seen := dict -}}
 {{- range ($page.Params.links | default slice) -}}
   {{- if .url -}}
-    {{- $key := .name | default .type | default .url -}}
+    {{- $key := .type | default .name | default .url -}}
     {{- if not (index $seen $key) -}}
       {{- $links = $links | append . -}}
       {{- $seen = merge $seen (dict $key true) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- with $page.Params.doi -}}
+  {{- if not (index $seen "doi") -}}
+    {{- $links = $links | append (dict "type" "doi" "url" (printf "https://doi.org/%s" .)) -}}
+    {{- $seen = merge $seen (dict "doi" true) -}}
+  {{- end -}}
+{{- end -}}
 {{- with $page.Params.url_pdf -}}
-  {{- $links = $links | append (dict "name" "PDF" "url" .) -}}
-{{- end -}}
-{{- with $page.Params.url_code -}}
-  {{- $links = $links | append (dict "name" "Code" "url" .) -}}
-{{- end -}}
-{{- with $page.Params.url_slides -}}
-  {{- $links = $links | append (dict "name" "Slides" "url" .) -}}
+  {{- $links = $links | append (dict "type" "pdf" "url" .) -}}
 {{- end -}}
 {{- return $links -}}
