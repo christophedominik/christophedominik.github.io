@@ -44,7 +44,7 @@ sections:
     design:
       view: citation
 
-  - block: collection
+  - block: portfolio
     id: projects
     content:
       title: Projects
@@ -60,9 +60,9 @@ sections:
         - name: Past
           tag: Past
     design:
-      view: masonry
+      view: compact
 
-  - block: collection
+  - block: portfolio
     id: talks
     content:
       title: Presentations
@@ -74,9 +74,9 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: article-grid
+      view: compact
 
-  - block: collection
+  - block: portfolio
     id: posts
     content:
       title: Outreach
@@ -88,7 +88,8 @@ sections:
       sort_by: Date
       sort_ascending: false
     design:
-      view: list
+      view: citation
+
 
   - block: gallery
     id: gallery
@@ -96,22 +97,29 @@ sections:
       title: Gallery
       subtitle: 'Fieldwork & research'
       items:
-        - image: media/gallery/LEGATO_01.png
+        - src: media/gallery/LEGATO_01.png
           caption: 'Rice terraces of Batad, Ifugao, Philippines (LEGATO 2012)'
-        - image: media/gallery/LEGATO_03.jpg
-          caption: 'A Banaue inhabitant, crew helpers and myself in Banaue, Ifugao, Philippines (LEGATO 2014)'
-        - image: media/gallery/LEGATO_04.jpg
+        - src: media/gallery/LEGATO_03.jpg
+          caption: 'A Banaue inhabitant, crew helpers and myself (LEGATO 2014)'
+        - src: media/gallery/LEGATO_04.jpg
           caption: 'Blow-Vac sampling machine to collect rice-arthropods (LEGATO 2014)'
-        - image: media/gallery/PoshBee_01.jpeg
+        - src: media/gallery/PoshBee_01.jpeg
           caption: 'Oilseed rape fields in Saxony-Anhalt, Germany (PoshBee 2019)'
-        - image: media/gallery/PoshBee_03.jpg
+        - src: media/gallery/PoshBee_03.jpg
           caption: 'Extraction of nectar from bumblebee individuals (PoshBee 2019)'
-        - image: media/gallery/PoshBee_02.jpeg
+        - src: media/gallery/PoshBee_02.jpeg
           caption: 'Osmia bicornis saying hello! (PoshBee 2019)'
-        - image: media/gallery/PoshBee_05.jpg
+        - src: media/gallery/PoshBee_05.jpg
           caption: 'Bumblebee colony assessment (PoshBee 2019)'
-        - image: media/gallery/Safeguard_02.jpg
+        - src: media/gallery/Safeguard_02.jpg
           caption: 'Aporia crataegi (Safeguard 2022)'
+    design:
+      layout: masonry
+      columns: 4
+      gap: sm
+      lightbox: true
+      hover_zoom: true
+      caption_position: hover
 
   - block: markdown
     id: contact
