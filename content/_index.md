@@ -12,19 +12,10 @@ sections:
       button:
         text: Download CV
         url: uploads/cv.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
       background:
         gradient_mesh:
           enable: true
-      name:
-        size: md
-      avatar:
-        size: medium
-        shape: circle
 
   - block: markdown
     content:
@@ -43,33 +34,24 @@ sections:
     id: papers
     content:
       title: Recent Publications
+      text: Click here to see all [publications](./publications/).
       filters:
         folders:
           - publications
-        exclude_featured: false
+      count: 5
+      sort_by: Date
+      sort_ascending: false
     design:
       view: citation
 
   - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-
-  - block: portfolio
     id: projects
     content:
       title: Projects
       subtitle: 'Past & current'
-      text: ''
       filters:
         folders:
           - project
-      default_button_index: 0
       buttons:
         - name: All
           tag: '*'
@@ -78,8 +60,35 @@ sections:
         - name: Past
           tag: Past
     design:
-      view: card
-      columns: 2
+      view: compact
+
+  - block: collection
+    id: talks
+    content:
+      title: Presentations
+      subtitle: 'Selected Presentations'
+      filters:
+        folders:
+          - events
+      count: 3
+      sort_by: Date
+      sort_ascending: false
+    design:
+      view: compact
+
+  - block: collection
+    id: posts
+    content:
+      title: Outreach
+      subtitle: 'Media interviews, press & blogs'
+      filters:
+        folders:
+          - blog
+      count: 10
+      sort_by: Date
+      sort_ascending: false
+    design:
+      view: compact
 
   - block: gallery
     id: gallery
@@ -108,7 +117,6 @@ sections:
     id: contact
     content:
       title: 'Contact'
-      subtitle: ''
       text: |-
         **Dr. Christophe Dominik**
         Department of Community Ecology (BZF)
@@ -119,11 +127,7 @@ sections:
         **Phone:** +49 341 6025 4318
         **Office:** Room 3.23, Floor 3
 
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379"
-          style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;"
-          loading="lazy">
-        </iframe>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379" style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;" loading="lazy"></iframe>
     design:
       columns: '1'
 ---
