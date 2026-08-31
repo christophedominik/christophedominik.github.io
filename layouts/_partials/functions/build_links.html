@@ -1,12 +1,58 @@
+{{/*
+  build_links.html — FUNCTION partial: returns a slice of link objects.
+  page_links.html ranges over this slice to render buttons.
+  Fixes: $seen.SetInMap nil map panic in blox@v0.0.0-20260527
+  (uses `merge` instead of `.SetInMap` to avoid nil map crash)
+*/}}
 {{- $page := .page -}}
-{{- $links := $page.Params.links | default slice -}}
+{{- $links := slice -}}
 {{- $seen := dict -}}
-{{- range $links -}}
+
+{{/* Process links: list */}}
+{{- range $page.Params.links -}}
   {{- if .url -}}
     {{- $key := .name | default .url -}}
     {{- if not (index $seen $key) -}}
+      {{- $links = $links | append . -}}
       {{- $seen = merge $seen (dict $key true) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
+
+{{/* Shorthand URL fields */}}
+{{- with $page.Params.url_pdf -}}
+  {{- if not (index $seen "PDF") -}}
+    {{- $links = $links | append (dict "name" "PDF" "url" . "icon" "hero/document") -}}
+    {{- $seen = merge $seen (dict "PDF" true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $page.Params.url_code -}}
+  {{- if not (index $seen "Code") -}}
+    {{- $links = $links | append (dict "name" "Code" "url" . "icon" "brands/github") -}}
+    {{- $seen = merge $seen (dict "Code" true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $page.Params.url_slides -}}
+  {{- if not (index $seen "Slides") -}}
+    {{- $links = $links | append (dict "name" "Slides" "url" . "icon" "fas fa-chalkboard-teacher") -}}
+    {{- $seen = merge $seen (dict "Slides" true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $page.Params.url_video -}}
+  {{- if not (index $seen "Video") -}}
+    {{- $links = $links | append (dict "name" "Video" "url" . "icon" "fas fa-video") -}}
+    {{- $seen = merge $seen (dict "Video" true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $page.Params.url_source -}}
+  {{- if not (index $seen "Source") -}}
+    {{- $links = $links | append (dict "name" "Source" "url" .) -}}
+    {{- $seen = merge $seen (dict "Source" true) -}}
+  {{- end -}}
+{{- end -}}
+
 {{- return $links -}}
