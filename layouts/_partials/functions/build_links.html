@@ -1,34 +1,288 @@
-{{- $page := .page -}}
-{{- $links := slice -}}
-{{- $seen := dict -}}
+{{/*
+  Hugo Blox Page Link Builder
 
-{{/* Cite button from cite.bib */}}
-{{- $cite := $page.Resources.GetMatch "cite.bib" -}}
-{{- if $cite -}}
-  {{- $links = $links | append (dict "type" "cite" "url" $cite.RelPermalink) -}}
-  {{- $seen = merge $seen (dict "cite" true) -}}
-{{- end -}}
+  Compatible with HugoBlox/kit blox:
+  v0.0.0-20260527025321-61f41d3667f1
 
-{{/* DOI from doi: field */}}
-{{- with $page.Params.doi -}}
-  {{- $links = $links | append (dict "type" "doi" "url" (printf "https://doi.org/%s" .)) -}}
-  {{- $seen = merge $seen (dict "doi" true) -}}
-{{- end -}}
+  This is based on the upstream build_links.html, with the
+  Scratch/SetInMap de-duplication replaced by a normal dict.
+*/}}
 
-{{/* Links from links: list */}}
-{{- range ($page.Params.links | default slice) -}}
-  {{- if .url -}}
-    {{- $key := .type | default .name | default .url -}}
-    {{- if not (index $seen $key) -}}
-      {{- $links = $links | append . -}}
-      {{- $seen = merge $seen (dict $key true) -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
+{{ $page := .page }}
+{{ $is_list := .is_list }}
+{{ $types := hugo.Data.link_types.types }}
+{{ $derived := hugo.Data.link_types.derived }}
 
-{{/* Shorthand url_ fields */}}
-{{- with $page.Params.url_pdf -}}
-  {{- $links = $links | append (dict "type" "pdf" "url" .) -}}
-{{- end -}}
+{{ $links := slice }}
+{{ $seen := dict }}
 
-{{- return $links -}}
+{{/* 1) Author-provided links */}}
+{{ with $page.Params.links }}
+  {{ range . }}
+    {{ $type := .type | default "custom" }}
+    {{ $url := .url | default "" }}
+
+    {{ if and (not $url) .id }}
+      {{ if eq $type "doi" }}
+        {{ $url = replace (index (index $derived "doi") "url_template") "{id}" (printf "%v" .id) }}
+      {{ else if and (eq $type "preprint") (eq .provider "arxiv") }}
+        {{ $url = replace (index (index $derived "arxiv") "url_template") "{id}" (printf "%v" .id) }}
+      {{ else if and (eq $type "preprint") (eq .provider "openreview") }}
+        {{ $url = replace (index (index $derived "openreview") "url_template") "{id}" (printf "%v" .id) }}
+      {{ end }}
+    {{ end }}
+
+    {{ $keyF := printf "%s::%s" $type $url }}
+
+    {{ if not (index $seen $keyF) }}
+      {{ $seen = merge $seen (dict $keyF true) }}
+
+      {{ $links = $links | append (dict
+        "type" $type
+        "url" $url
+        "icon" (.icon | default (index (index $types $type) "icon") | default "hero/link")
+        "labelKey" (index (index $types $type) "label_i18n")
+        "label" (.label | default .name)
+        "contexts" (.contexts | default (slice "list" "page"))
+        "rel" .rel
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 2) Associated projects */}}
+{{ with $page.Params.projects }}
+  {{ range . }}
+    {{ with (site.GetPage (printf "projects/%s" .)) }}
+      {{ $typeF := "project" }}
+      {{ $urlF := .RelPermalink }}
+      {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+      {{ if not (index $seen $keyF) }}
+        {{ $seen = merge $seen (dict $keyF true) }}
+
+        {{ $links = $links | append (dict
+          "type" $typeF
+          "url" $urlF
+          "icon" (index (index $types $typeF) "icon")
+          "labelKey" (index (index $types $typeF) "label_i18n")
+          "contexts" (slice "list" "page")
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 2b) Slides relation */}}
+{{ with $page.Params.slides }}
+  {{ if reflect.IsMap . }}
+
+  {{ else if reflect.IsSlice . }}
+    {{ range . }}
+      {{ with (site.GetPage (printf "slides/%s" .)) }}
+        {{ $typeF := "slides" }}
+        {{ $urlF := .RelPermalink }}
+        {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+        {{ if not (index $seen $keyF) }}
+          {{ $seen = merge $seen (dict $keyF true) }}
+
+          {{ $links = $links | append (dict
+            "type" $typeF
+            "url" $urlF
+            "icon" (index (index $types $typeF) "icon")
+            "labelKey" (index (index $types $typeF) "label_i18n")
+            "contexts" (slice "list" "page")
+          ) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+  {{ else }}
+    {{ with (site.GetPage (printf "slides/%s" .)) }}
+      {{ $typeF := "slides" }}
+      {{ $urlF := .RelPermalink }}
+      {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+      {{ if not (index $seen $keyF) }}
+        {{ $seen = merge $seen (dict $keyF true) }}
+
+        {{ $links = $links | append (dict
+          "type" $typeF
+          "url" $urlF
+          "icon" (index (index $types $typeF) "icon")
+          "labelKey" (index (index $types $typeF) "label_i18n")
+          "contexts" (slice "list" "page")
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 3) Auto-detected local PDF */}}
+{{ with $page.File.ContentBaseName }}
+  {{ with ($page.Resources.GetMatch (printf "%s.pdf" .)) }}
+    {{ $typeF := "pdf" }}
+    {{ $urlF := .RelPermalink }}
+    {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+    {{ if not (index $seen $keyF) }}
+      {{ $seen = merge $seen (dict $keyF true) }}
+
+      {{ $links = $links | append (dict
+        "type" $typeF
+        "url" $urlF
+        "icon" (index (index $types $typeF) "icon")
+        "labelKey" (index (index $types $typeF) "label_i18n")
+        "contexts" (slice "list" "page")
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 3b) Auto-detected cite.bib */}}
+{{ with ($page.Resources.GetMatch "cite.bib") }}
+  {{ $typeF := "bibtex" }}
+  {{ $urlF := .RelPermalink }}
+  {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+  {{ if not (index $seen $keyF) }}
+    {{ $seen = merge $seen (dict $keyF true) }}
+
+    {{ $links = $links | append (dict
+      "type" $typeF
+      "url" $urlF
+      "icon" (index (index $types $typeF) "icon")
+      "labelKey" (index (index $types $typeF) "label_i18n")
+      "contexts" (slice "list" "page")
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{/* 4) hugoblox.ids */}}
+{{ with $page.Params.hugoblox }}
+  {{ with .ids }}
+    {{ range $key, $val := . }}
+      {{ with (index $derived $key) }}
+        {{ $der := . }}
+        {{ $typeF := index $der "type" }}
+        {{ $urlF := replace (index $der "url_template") "{id}" (printf "%v" $val) }}
+        {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+        {{ if not (index $seen $keyF) }}
+          {{ $seen = merge $seen (dict $keyF true) }}
+
+          {{ $links = $links | append (dict
+            "type" $typeF
+            "url" $urlF
+            "icon" (index $der "icon")
+            "labelKey" (index $der "label_i18n")
+            "contexts" (slice "list" "page")
+          ) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 5) Legacy external_link */}}
+{{ with $page.Params.external_link }}
+  {{ $typeF := "site" }}
+  {{ $urlF := . }}
+  {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+  {{ if not (index $seen $keyF) }}
+    {{ $seen = merge $seen (dict $keyF true) }}
+
+    {{ $links = $links | append (dict
+      "type" $typeF
+      "url" $urlF
+      "icon" (index (index $types $typeF) "icon")
+      "labelKey" (index (index $types $typeF) "label_i18n")
+      "contexts" (slice "list" "page")
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{/* 6) Legacy top-level DOI */}}
+{{ with $page.Params.doi }}
+  {{ with (index $derived "doi") }}
+    {{ $der := . }}
+    {{ $typeF := index $der "type" }}
+    {{ $urlF := replace (index $der "url_template") "{id}" (printf "%v" $page.Params.doi) }}
+    {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+    {{ if not (index $seen $keyF) }}
+      {{ $seen = merge $seen (dict $keyF true) }}
+
+      {{ $links = $links | append (dict
+        "type" $typeF
+        "url" $urlF
+        "icon" (index $der "icon")
+        "labelKey" (index $der "label_i18n")
+        "contexts" (slice "list" "page")
+      ) }}
+    {{ end }}
+
+  {{ else }}
+    {{ $typeF := "doi" }}
+    {{ $urlF := printf "https://doi.org/%v" $page.Params.doi }}
+    {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+    {{ if not (index $seen $keyF) }}
+      {{ $seen = merge $seen (dict $keyF true) }}
+
+      {{ $links = $links | append (dict
+        "type" $typeF
+        "url" $urlF
+        "icon" (index (index $types $typeF) "icon")
+        "labelKey" (index (index $types $typeF) "label_i18n")
+        "contexts" (slice "list" "page")
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 7) Legacy url_* fields */}}
+{{ $legacy := dict
+  "url_pdf" "pdf"
+  "url_preprint" "preprint"
+  "url_code" "code"
+  "url_dataset" "dataset"
+  "url_poster" "poster"
+  "url_project" "project"
+  "url_slides" "slides"
+  "url_source" "source"
+  "url_video" "video"
+}}
+
+{{ range $legacyKey, $legacyType := $legacy }}
+  {{ with index $page.Params $legacyKey }}
+
+    {{ $u := . }}
+
+    {{ with ($page.Resources.GetMatch $u) }}
+      {{ $u = .RelPermalink }}
+    {{ else }}
+      {{ $u = $u | relURL }}
+    {{ end }}
+
+    {{ $typeF := $legacyType }}
+    {{ $urlF := $u }}
+    {{ $keyF := printf "%s::%s" $typeF $urlF }}
+
+    {{ if not (index $seen $keyF) }}
+      {{ $seen = merge $seen (dict $keyF true) }}
+
+      {{ $links = $links | append (dict
+        "type" $typeF
+        "url" $urlF
+        "icon" (index (index $types $typeF) "icon")
+        "labelKey" (index (index $types $typeF) "label_i18n")
+        "contexts" (slice "list" "page")
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $links }}

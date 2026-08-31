@@ -19,22 +19,13 @@ publication_types:
 - article-journal
 publication: '*Science of the Total Environment*'
 doi: 10.1016/j.scitotenv.2024.172239
+
 links:
   - type: pdf
     url: https://arxiv.org/pdf/1512.04133v1
   - type: doi
-    url: 10.1016/j.scitotenv.2024.172239
-  - type: dataset
-    url: ""
-  - type: poster
-    url: ""
-  - type: project
-    url: ""
+    url: https://doi.org/10.1016/j.scitotenv.2024.172239
   - type: slides
     url: https://www.slideshare.net/
-  - type: source
-    url: ""
-  - type: video
-    url: ""
     
 ---
