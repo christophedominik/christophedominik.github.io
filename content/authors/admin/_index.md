@@ -11,14 +11,12 @@ organizations:
 bio: "I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity.
 
 My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia)."
-
-Download my [CV](uploads/cv.pdf).
 interests:
   - Landscape Ecology
-  - Pollination Ecology
-  - Biological Control
-  - Gut Microbiome
   - Macroecology
+  - Pollination Ecology
+  - Pollinator Health
+  - Biological Control
   - R and data visualization
 education:
   - area: PhD in Natural Sciences
@@ -78,7 +76,3 @@ profiles:
     url: uploads/cv.pdf
     label: CV
 ---
-
-I am an ecologist looking at patterns of biodiversity and associated ecosystem services at different spatial and temporal scales. As a postdoctoral researcher in the Department of Community Ecology at the [Helmholtz Centre for Environmental Research (UFZ)](https://www.ufz.de/index.php?en=36737), I investigate how pollinators and the services they provide are influenced by landscape and land-use intensity.
-
-My main research interests focus on landscape ecology, macroecology, agro-ecology, pollination services and biological control. I use different approaches and methods to better understand the effects of landscape on communities and ecosystem services, both in temperate (Europe) and tropical regions (South-East Asia).
