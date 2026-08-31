@@ -113,7 +113,7 @@ sections:
         folders:
           - blog
     design:
-      view: compact
+      view: article-grid
       columns: 2
       fill_image: false
       show_date: true
