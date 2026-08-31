@@ -46,7 +46,7 @@ sections:
     design:
       view: citation
 
-  - block: portfolio
+  - block: collection
     id: projects
     content:
       title: Projects
