@@ -14,7 +14,7 @@ image:
   caption: 
   focal_point: Smart
 
-links: ""
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""
