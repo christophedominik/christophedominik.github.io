@@ -7,9 +7,7 @@ tags:
 - Current
 date: "2024-01-01T00:00:00"
 
-links:
- - type: site
-   url: https://wildposh.eu/
+
 ---
 
 # Description
