@@ -38,8 +38,8 @@ sections:
   - block: markdown
     content:
       title: 'Collaboration Map'
-      subtitle: "External network at the country level"
       text: |-
+        External network at the country level  
         <iframe
           src="/collaboration_map.html"
           style="display:block; width:100%; height:55vh; border:none; border-radius:8px;"
@@ -108,7 +108,7 @@ sections:
     id: posts
     content:
       title: Outreach
-      subtitle: 'Media interviews, press & blogs'
+      text: Media interviews, press & blogs
       filters:
         folders:
           - blog
