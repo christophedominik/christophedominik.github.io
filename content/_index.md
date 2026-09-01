@@ -37,7 +37,7 @@ sections:
 
   - block: markdown
     content:
-      title: 'Collaboration Map'
+      title: 'Collaborations Map'
       text: |-
         <div style="text-align:center;">
           External network at the country level
