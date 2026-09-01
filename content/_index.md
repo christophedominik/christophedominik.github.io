@@ -39,9 +39,7 @@ sections:
     content:
       title: 'Collaboration Map'
       text: |-
-        <iframe src="/collaboration_map.html" width="100%" height="500px" style="border:none;border-radius:8px"></iframe>
-    design:
-      columns: '1'
+        <iframe src="/collaboration_map.html" width="100%" height="600px" style="border:none;border-radius:8px"></iframe>
 
   - block: collection
     id: publications
