@@ -46,7 +46,7 @@ sections:
     design:
       view: citation
 
-  - block: portfolio
+    - block: portfolio
     id: projects
     content:
       title: Projects
@@ -62,8 +62,8 @@ sections:
           tag: Past
         - name: All
           tag: '*'
-       archive: 
-         enable: false
+      archive:
+        enable: false
     design:
       columns: 3
 
