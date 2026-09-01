@@ -28,7 +28,7 @@ abstract: |
 
 doi: 10.1111/1365-2664.70377
 
-projects: [iNTERACT]
+projects: [iNTERACT, VOODOO]
 
 image: 
   filename: featured.jpg 
