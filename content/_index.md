@@ -45,7 +45,7 @@ sections:
             width="700"
             height="600"
             style="display:block; border:none; border-radius:8px;"
-           ></iframe>
+          ></iframe>
         </div>
                 
   - block: collection
