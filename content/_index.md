@@ -35,20 +35,20 @@ sections:
       layout: cards
       numbers_gradient: true
 
-- block: markdown
-  content:
-    title: 'Collaboration Map'
-    text: |-
-      <div style="text-align:center;">
-        External network at the country level
-      </div>
-
-      <iframe
-        src="/collaboration_map.html"
-        style="display:block; width:100%; height:57vh; border:none; border-radius:8px;"
-      ></iframe>
-  design:
-    css_class: 'collaboration-map-block'
+  - block: markdown
+    content:
+      title: 'Collaboration Map'
+      text: |-
+        <div style="text-align:center;">
+          External network at the country level
+        </div>
+  
+        <iframe
+          src="/collaboration_map.html"
+          style="display:block; width:100%; height:57vh; border:none; border-radius:8px;"
+        ></iframe>
+    design:
+      css_class: 'collaboration-map-block'
   
   - block: collection
     content:
