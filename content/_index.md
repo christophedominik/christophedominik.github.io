@@ -34,6 +34,7 @@ sections:
     design:
       layout: cards
       numbers_gradient: true
+      text: <iframe src="/collaboration_map.html" width="100%" height="500px" frameborder="0"></iframe>
 
   - block: collection
     id: publications
