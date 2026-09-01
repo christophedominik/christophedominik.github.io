@@ -35,16 +35,14 @@ sections:
       layout: cards
       numbers_gradient: true
 
-  - block: markdown
+  - block: hero
     content:
-      title: 'Collaboration Map'
+      title: Collaboration Map
       text: |-
         <iframe
           src="/collaboration_map.html"
-          style="display:block; width:100%; height:700px; border:none; border-radius:8px;"
+          style="display:block; width:100%; height:70vh; border:none; border-radius:8px;"
         ></iframe>
-    design:
-      css_class: 'w-full max-w-none px-4'
         
   - block: collection
     content:

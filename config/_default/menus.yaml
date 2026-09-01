@@ -2,9 +2,6 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Map
-    url: /collaboration_map.html
-    weight: 15
   - name: Publications
     url: /#publications
     weight: 20
