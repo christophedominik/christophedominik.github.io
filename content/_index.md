@@ -36,10 +36,15 @@ sections:
       numbers_gradient: true
 
   - block: markdown
-    content:
-      title: 'Collaboration Map'
-      text: |-
-        <iframe src="/collaboration_map.html" width="100%" height="600px" style="border:none;border-radius:8px"></iframe>
+  content:
+    title: 'Collaboration Map'
+    text: |-
+      <div style="width:100vw; position:relative; left:50%; transform:translateX(-50%);">
+        <iframe
+          src="/collaboration_map.html"
+          style="display:block; width:100%; height:700px; border:none; border-radius:8px;"
+        ></iframe>
+      </div>
         
   - block: collection
     content:
