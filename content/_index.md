@@ -39,15 +39,14 @@ sections:
     content:
       title: 'Collaboration Map'
       text: |-
-        <div style="display:flex; justify-content:center; width:100%;">
-          <iframe
-            src="/collaboration_map.html"
-            width="700"
-            height="600"
-            style="display:block; border:none; border-radius:8px;"
-          ></iframe>
-        </div>
-                
+        <iframe
+          src="/collaboration_map.html"
+          style="display:block; width:100%; height:70vh; min-height:500px; border:none; border-radius:8px;"
+        ></iframe>
+    design:
+      spacing:
+        padding: ['0', '0', '0', '0']
+        
   - block: collection
     content:
       title: Featured Publication
