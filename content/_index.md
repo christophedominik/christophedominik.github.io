@@ -45,7 +45,7 @@ sections:
   
         <iframe
           src="/collaboration_map.html"
-          style="display:block; width:100%; height:56vh; border:none; border-radius:8px;"
+          style="display:block; width:100%; height:55vh; border:none; border-radius:8px;"
         ></iframe>
     design:
       css_class: 'collaboration-map-block'
