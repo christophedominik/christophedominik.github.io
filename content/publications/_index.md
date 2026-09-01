@@ -9,4 +9,9 @@ view: citation
 banner:
   caption: ''
   image: ''
+
+header: 
+  search: 
+    enable: true
+  
 ---
