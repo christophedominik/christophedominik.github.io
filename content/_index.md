@@ -40,7 +40,18 @@ sections:
       title: 'Collaboration Map'
       text: |-
         <iframe src="/collaboration_map.html" width="100%" height="600px" style="border:none;border-radius:8px"></iframe>
-
+        
+  - block: collection
+    content:
+      title: Featured Publication
+      filters:
+        folders:
+          - publications
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 1
+      
   - block: collection
     id: publications
     content:
