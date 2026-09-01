@@ -27,5 +27,12 @@ abstract: |
     4. _Synthesis and application._ To better support plant–pollinator communities in agricultural-dominated landscapes, we suggest incentivizing the planting of complementary floral resources and preserving or restoring semi-natural habitat areas. Especially in intensively used agroecosystems, the negative effects of mass-flowering crops can be mitigated by maintaining flower-rich edge habitats and relatively small field sizes, which help support plant and pollinator communities, avoid potential negative effects of exploitative competition, and ensure the sustainability of pollination services via increased functional redundancy.
 
 doi: 10.1111/1365-2664.70377
- 
+
+image: 
+  filename: featured.jpg 
+  caption: '\[Image source: Journal of Applied Ecology]\(https://besjournals.onlinelibrary.wiley.com/cms/asset/6b05ad76-0fdd-45f2-8001-eee6936618b9/jpe70354-toc-0001-m.jpg)' 
+  focal\_point: Top
+
+
+
 ---

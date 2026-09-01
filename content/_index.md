@@ -39,10 +39,10 @@ sections:
     content:
       title: 'Collaboration Map'
       text: |-
-        <div style="width:100vw; position:relative; left:50%; transform:translateX(-50%);">
+        <div style="width:100%; max-width:900px; margin:0 auto;">
           <iframe
             src="/collaboration_map.html"
-            style="display:block; width:100%; height:700px; border:none; border-radius:8px;"
+            style="display:block; width:100%; height:650px; border:none; border-radius:8px;"
           ></iframe>
         </div>
                 
