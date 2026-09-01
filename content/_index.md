@@ -21,11 +21,11 @@ sections:
         gradient_mesh:
           enable: true
 
-  - block: stats
+  - block: Cited by
     content:
-      title: Research at a glance
+      title: 
       items:
-        - statistic: "750+"
+        - statistic: "790+"
           description: Citations
         - statistic: "25"
           description: Publications
@@ -35,14 +35,16 @@ sections:
       layout: cards
       numbers_gradient: true
 
-  - block: hero
+  - block: markdown
     content:
-      title: Collaboration Map
+      title: 'Collaboration Map'
       text: |-
         <iframe
           src="/collaboration_map.html"
           style="display:block; width:100%; height:70vh; border:none; border-radius:8px;"
         ></iframe>
+    design:
+      css_class: 'collaboration-map-block'
         
   - block: collection
     content:

@@ -1,0 +1,9 @@
+.collaboration-map-block > div {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.collaboration-map-block .prose {
+  max-width: none !important;
+  width: 100% !important;
+}
