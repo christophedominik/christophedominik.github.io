@@ -41,8 +41,10 @@ sections:
       text: |-
         <iframe
           src="/collaboration_map.html"
-          style="display:block; width:90%; height:700px; border:none; border-radius:8px;"
+          style="display:block; width:100%; height:700px; border:none; border-radius:8px;"
         ></iframe>
+    design:
+      css_class: 'w-full max-w-none px-4'
         
   - block: collection
     content:
