@@ -1,7 +1,7 @@
 ---
 title: Recent & Upcoming Talks
 cms_exclude: true
-view: compact
+view: date-title-summary
 image:
   caption: ''
   filename: ''

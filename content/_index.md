@@ -26,11 +26,11 @@ sections:
     content:
       title: Research at a glance
       items:
-        - statistic: "792"
+        - statistic: "~800"
           description: Citations
-        - statistic: "24"
+        - statistic: "25"
           description: Publications
-        - statistic: "~14"
+        - statistic: "14"
           description: h-index
     design:
       layout: cards
