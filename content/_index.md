@@ -5,7 +5,6 @@ date: 2022-10-24
 type: landing
 design: 
   spacing: "3rem"
-
 sections:
   - block: resume-biography-3
     content:
@@ -46,7 +45,7 @@ sections:
     design:
       view: citation
 
-    - block: portfolio
+  - block: portfolio
     id: projects
     content:
       title: Projects
@@ -132,10 +131,8 @@ sections:
         Department of Community Ecology (BZF)
         Helmholtz Centre for Environmental Research - UFZ
         Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany
-
         **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)  
         **Office:** Room 3.23, Floor 3
-
         <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379" style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;" loading="lazy"></iframe>
     design:
       columns: '1'
