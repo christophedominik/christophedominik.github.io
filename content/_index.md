@@ -35,18 +35,21 @@ sections:
       layout: cards
       numbers_gradient: true
 
-  - block: markdown
-    content:
-      title: 'Collaboration Map'
-      text: |-
-        External network at the country level  
-        <iframe
-          src="/collaboration_map.html"
-          style="display:block; width:100%; height:55vh; border:none; border-radius:8px;"
-        ></iframe>
-    design:
-      css_class: 'collaboration-map-block'
-        
+- block: markdown
+  content:
+    title: 'Collaboration Map'
+    text: |-
+      <div style="text-align:center;">
+        External network at the country level
+      </div>
+
+      <iframe
+        src="/collaboration_map.html"
+        style="display:block; width:100%; height:57vh; border:none; border-radius:8px;"
+      ></iframe>
+  design:
+    css_class: 'collaboration-map-block'
+  
   - block: collection
     content:
       title: Featured Publication
@@ -156,7 +159,7 @@ sections:
         Helmholtz Centre for Environmental Research - UFZ
         Theodor-Lieser-Strasse 4, D-06120 Halle (Saale), Germany
         **Email:** [christophe.dominik@ufz.de](mailto:christophe.dominik@ufz.de)  
-        **Office:** Room 3.23, Floor 3
+        **Office:** Room 3.13, Floor 3
         <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.920%2C51.488%2C11.956%2C51.504&layer=mapnik&marker=51.4959%2C11.9379" style="width:100%;height:320px;border:0;border-radius:8px;margin-top:1rem;" loading="lazy"></iframe>
     design:
       columns: '1'
