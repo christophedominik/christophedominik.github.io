@@ -26,7 +26,5 @@ doi: 10.1111/1365-2664.70377
 
 image:
   caption: '[**Unsplash**](https://besjournals.onlinelibrary.wiley.com/cms/asset/6b05ad76-0fdd-45f2-8001-eee6936618b9/jpe70354-toc-0001-m.jpg)'
-  focal_point: ""
-  preview_only: false
   
 ---
