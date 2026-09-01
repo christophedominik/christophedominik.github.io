@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: 'Christophe Dominik'
 # Website URL
-baseURL: 'https://christophedominik.github.io/new-academic-cv-2026/'
+baseURL: 'https://christophedominik.github.io/'
 
 ############################
 ## LANGUAGE
