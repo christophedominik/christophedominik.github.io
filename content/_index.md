@@ -64,6 +64,7 @@ sections:
           tag: '*'
     design:
       columns: 3
+      show_more: false
 
   - block: collection
     id: talks
