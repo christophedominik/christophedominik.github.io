@@ -27,7 +27,7 @@
 
   <!-- Publications -->
   <div id="pub-list">
-    {{ range sort .Pages "Date" "desc" }}
+    {{ range $i, $page := sort .Pages "Date" "desc" }}
     {{ $pub := . }}
     {{ $year := .Date.Format "2006" }}
     {{ $types := .Params.publication_types }}
@@ -39,6 +39,7 @@
 
       <!-- Authors -->
       <p class="text-sm text-gray-600 mb-1">
+  	<span class="font-semibold text-gray-500">{{ add $i 1 }}.</span>
         {{ range $i, $author := .Params.authors }}
           {{- if $i }}, {{ end }}
           {{- if eq $author "admin" }}<strong>Christophe Dominik</strong>
