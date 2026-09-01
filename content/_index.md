@@ -39,11 +39,13 @@ sections:
     content:
       title: 'Collaboration Map'
       text: |-
-        <div style="width:100%; max-width:900px; margin:0 auto;">
+        <div style="display:flex; justify-content:center; width:100%;">
           <iframe
             src="/collaboration_map.html"
-            style="display:block; width:100%; height:650px; border:none; border-radius:8px;"
-          ></iframe>
+            width="700"
+            height="600"
+            style="display:block; border:none; border-radius:8px;"
+           ></iframe>
         </div>
                 
   - block: collection
@@ -56,6 +58,7 @@ sections:
     design:
       view: article-grid
       columns: 1
+      fill_image: false
       
   - block: collection
     id: publications

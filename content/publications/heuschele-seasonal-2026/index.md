@@ -33,8 +33,6 @@ projects: [iNTERACT, VOODOO]
 image: 
   filename: featured.jpg 
   caption: '\[Image source: Journal of Applied Ecology]\(https://besjournals.onlinelibrary.wiley.com/cms/asset/6b05ad76-0fdd-45f2-8001-eee6936618b9/jpe70354-toc-0001-m.jpg)' 
-  focal\_point: Top
-
 
 
 ---
