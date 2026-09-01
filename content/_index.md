@@ -37,11 +37,12 @@ sections:
 
   - block: markdown
     content:
-      title: 'Network Map'
+      title: 'Collaboration Map'
+      subtitle: "External network at the country level"
       text: |-
         <iframe
           src="/collaboration_map.html"
-          style="display:block; width:100%; height:450px; border:none; border-radius:8px;"
+          style="display:block; width:100%; height:50vh; border:none; border-radius:8px;"
         ></iframe>
     design:
       css_class: 'collaboration-map-block'
