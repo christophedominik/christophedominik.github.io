@@ -21,9 +21,9 @@ sections:
         gradient_mesh:
           enable: true
 
-  - block: Cited by
+  - block: stats
     content:
-      title: 
+      title: Cited by
       items:
         - statistic: "790+"
           description: Citations
