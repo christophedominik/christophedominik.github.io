@@ -34,7 +34,14 @@ sections:
     design:
       layout: cards
       numbers_gradient: true
-      text: <iframe src="/collaboration_map.html" width="100%" height="500px" frameborder="0"></iframe>
+
+  - block: markdown
+    content:
+      title: 'Collaboration Map'
+      text: |-
+        <iframe src="/collaboration_map.html" width="100%" height="500px" style="border:none;border-radius:8px"></iframe>
+    design:
+      columns: '1'
 
   - block: collection
     id: publications
