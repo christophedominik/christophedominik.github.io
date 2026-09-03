@@ -24,8 +24,9 @@ sections:
   - block: stats
     content:
       title: Cited by
+      subtitle: "from Google Scholar"
       items:
-        - statistic: "790+"
+        - statistic: "750+"
           description: Citations
         - statistic: "25"
           description: Publications
