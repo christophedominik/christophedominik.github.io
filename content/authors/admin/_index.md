@@ -1,6 +1,6 @@
 ---
 title: Christophe Dominik
-role: Postdoctoral Researcher
+role: Scientist / Postdoctoral Researcher
 organizations:
   - name: Helmholtz Centre for Environmental Research - UFZ
     url: https://www.ufz.de/index.php?en=36737
