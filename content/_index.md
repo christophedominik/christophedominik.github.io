@@ -26,7 +26,7 @@ sections:
       title: Cited by
       subtitle: "from Google Scholar"
       items:
-        - statistic: "750+"
+        - statistic: "800+"
           description: Citations
         - statistic: "25"
           description: Publications
